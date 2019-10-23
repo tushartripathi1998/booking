@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:layout_alignParentBottom = "true"
+            />
+        <TextView
+            android:text="user name"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_image"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textColor="@color/white"
+        android:paddingLeft="17dp"
+        android:layout_below="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9911223388"
+        android:textColor="@color/white"
+        android:paddingLeft="17dp"
+        android:layout_below="@+id/linearLayout"
+        android:paddingTop="18dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wallet"/>
+
+</RelativeLayout>
